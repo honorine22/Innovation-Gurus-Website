@@ -1,5 +1,6 @@
-particlesJS('particles-js',
-{
+// var primaryColor = "#ff3232"
+var primaryColor = "#2c30ff";
+particlesJS('particles-js', {
   "particles": {
     "number": {
       "value": 160,
@@ -9,13 +10,13 @@ particlesJS('particles-js',
       }
     },
     "color": {
-      "value": "#ff3232"
+      "value": primaryColor
     },
     "shape": {
       "type": "circle",
       "stroke": {
         "width": 0,
-        "color": "#ff3232"
+        "color": primaryColor
       },
       "polygon": {
         "nb_sides": 5
@@ -108,6 +109,4 @@ particlesJS('particles-js',
     }
   },
   "retina_detect": true
-}
-
-);
+});
