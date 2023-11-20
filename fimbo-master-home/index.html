@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
+    <script src="particles.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -40,12 +41,12 @@
         <header id="header" class="animated slideInDown" style="animation-delay:1.8s;">
             <table>
                 <tr>
-                    <td id="logo">Innovation Gurus.</td>
+                    <td id="logo">Innovation Gurus</td>
                     <td id="navigation">
-                        <a href="#work">work</a>
-                        <a href="#bio">about</a>
-                        <a href="">blog</a>
-                        <a href="#contact">contact</a>
+                        <a href="#work">Work</a>
+                        <a href="#bio">About</a>
+                        <a href="">Blog</a>
+                        <a href="#contact">Contact</a>
                     </td>
                 </tr>
             </table>
@@ -59,16 +60,21 @@
                     <button class="btn_one">Our Top Challenges</button><br>
                     <table>
                         <tr>
-                            <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social"><i
-                                        class="fab fa-facebook"></i></a></td>
-                            <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social"><i
-                                        class="fab fa-twitter"></i></a></td>
-                            <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social"><i
-                                        class="fab fa-instagram"></i></a></td>
+                            <td class="animated zoomIn" style="animation-delay:2.2s;">
+                                <a class="social"><i class="fab fa-facebook"></i></a>
+                            </td>
+                            <td class="animated zoomIn" style="animation-delay:2.4s;">
+                                <a class="social"><i class="fab fa-twitter"></i></a>
+                            </td>
+                            <td class="animated zoomIn" style="animation-delay:2.6s;">
+                                <a class="social"><i class="fab fa-instagram"></i></a>
+                            </td>
                         </tr>
                     </table>
                 </td>
-                <td id="rightImage" class="animated jackInTheBox" style="animation-delay:2.2s;"></td>
+                <td id="right-image-container">
+                    <div id="rightImage" class="animated jackInTheBox" style="animation-delay:2.2s;"></div>
+                </td>
             </tr>
         </table>
         <!-- close  -->
@@ -77,94 +83,153 @@
         <h1>work</h1>
         <div id="photos">
             <div class="card">
-                <img onclick="magnify($(this).attr('src'))"
-                    src="https://images.unsplash.com/photo-1547922657-b370d1687eb1?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80">
+                <img onclick="magnify($(this).attr('src'))" src="./images/known.jpg">
                 <div class="description">
-                    <h3>Challenge 01: Introduction</h3>
-                    <p class="paragraph">This is a cute kitten!</p>
+                    <h2>Challenge 01: Introduction</h2>
+                    <p>Get to Know Us! Know our passions and what we want to solve.</p>
                     <a target="_blank" href="https://youtu.be/Mv-5zNCq-_g"> <button>Learn More</button></a>
                 </div>
             </div>
             <!-- add text when hovring the image -->
             <div class="card">
-                <img onclick="magnify($(this).attr('src'))"
-                    src="https://images.unsplash.com/photo-1549375463-8cbc18ca3f24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80">
+                <img onclick="magnify($(this).attr('src'))" src="./images/discover.png">
                 <div class="description">
-                    <p class="paragraph">This is a cute kitten!</p>
+                    <h2>Challenge 02: Discover Africa</h2>
+                    <p>Untold Story of Africa Continent</p>
+                    <a target="_blank"
+                        href="https://docs.google.com/presentation/d/1_8htFvo_Zk2GU9c8ydzY1pWgNZZuV6s2tHBt2Eq71xM/edit?usp=sharing">
+                        <button>Learn More</button></a>
                 </div>
             </div>
             <div class="card">
-                <img onclick="magnify($(this).attr('src'))"
-                    src="https://images.unsplash.com/photo-1549366021-9f761d450615?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=650&q=80">
+                <img onclick="magnify($(this).attr('src'))" src="./images/Helplab.jpeg">
                 <div class="description">
-                    <p class="paragraph">This is a cute kitten!</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img onclick="magnify($(this).attr('src'))"
-                    src="https://images.unsplash.com/photo-1549309019-a1d77aeae74f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
-                <div class="description">
-                    <p class="paragraph">This is a cute kitten!</p>
-                </div>
-            </div>
-            <div class="card">
-                <img onclick="magnify($(this).attr('src'))"
-                    src="https://images.unsplash.com/photo-1547149666-769b42053e67?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=564&q=80">
-                <div class="description">
-                    <p class="paragraph">This is a cute kitten!</p>
-                </div>
-            </div>
-            <div class="card">
-                <img onclick="magnify($(this).attr('src'))"
-                    src="https://images.unsplash.com/photo-1547950515-e652d0f50b1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
-                <div class="description">
-                    <p class="paragraph">This is a cute kitten!</p>
+                    <h2>Challenge 03: HELP-LAB</h2>
+                    <p>An opportunity we had to improve the quality life of community near our campus</p>
+                    <a target="_blank" href="https://www.youtube.com/watch?v=DI0RZ8uJzmM"> <button>Learn
+                            More</button></a>
                 </div>
             </div>
 
             <div class="card">
-                <img onclick="magnify($(this).attr('src'))"
-                    src="https://images.unsplash.com/photo-1545342084-d03fe58ea023?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=633&q=80">
+                <img onclick="magnify($(this).attr('src'))" src="./images/mtn.jpeg">
                 <div class="description">
-                    <p class="paragraph">This is a cute kitten!</p>
+                    <h2>Challenge 04: HUNT FOR TREASURE</h2>
+                    <p class="paragraph">Here, we had to practive researching, systems thinking, and human-centered
+                        design
+                        though interviewing MTN agents
+                    </p>
+                    <a target="_blank" href="#"> <button>Learn More</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <img onclick="magnify($(this).attr('src'))"
+                    src="./images/budget.png">
+                <div class="description">
+                    <h2>Challenge 05: LAUNCHING OUR MISSION!</h2>
+                    <p class="paragraph">This is where we gathered to discuss the expenses required to turn our mission
+                        into reality.</p>
+                    <a target="_blank"
+                        href="https://docs.google.com/spreadsheets/d/1UrjCfz4k7TJiQiqgcpRg-rnX3hRLEA8lvBGiZxGEBCk/edit#gid=1695479590">
+                        <button>Learn More</button></a>
                 </div>
             </div>
         </div>
     </div>
     <div id="bio">
-        <h1>about</h1>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.
-        </p>
-        <div class="profiles">
-            <div class="profile-card">
-                <img src="https://placekitten.com/200/200" alt="Member 1">
-                <h2>Member 1</h2>
-                <p>Position: Developer</p>
+        <h1>Ubout Us</h1>
+        <div class="row">
+            <div class="our-team">
+                <div class="picture">
+                    <img class="img-fluid" src="./images/1.jpeg">
+                </div>
+                <div class="team-content">
+                    <h3 class="name">Jean Bosco</h3>
+                </div>
+                <ul class="social">
+                    <li><i class="fab fa-facebook"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-google-plus"></i></li>
+                    <li><i class="fab fa-linkedin"></i></li>
+                </ul>
             </div>
-            <div class="profile-card">
-                <img src="https://placekitten.com/200/200" alt="Member 1">
-                <h2>Member 1</h2>
-                <p>Position: Developer</p>
+            <div class="our-team">
+                <div class="picture">
+                    <img class="img-fluid" src="./images/3.jpg">
+                </div>
+                <div class="team-content">
+                    <h3 class="name">Benithe Dufatanye</h3>
+                </div>
+                <ul class="social">
+                    <li><i class="fab fa-facebook"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-google-plus"></i></li>
+                    <li><i class="fab fa-linkedin"></i></li>
+                </ul>
             </div>
-            <div class="profile-card">
-                <img src="https://placekitten.com/200/200" alt="Member 1">
-                <h2>Member 1</h2>
-                <p>Position: Developer</p>
+
+            <div class="our-team">
+                <div class="picture">
+                    <img class="img-fluid" src="./images/4.jpg">
+                </div>
+                <div class="team-content">
+                    <h3 class="name">Honorine Igiraneza</h3>
+                </div>
+                <ul class="social">
+                    <li><i class="fab fa-facebook"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-google-plus"></i></li>
+                    <li><i class="fab fa-linkedin"></i></li>
+                </ul>
+            </div>
+
+            <!-- second part -->
+            <div class="our-team">
+                <div class="picture">
+                    <img class="img-fluid" src="./images/6.jpg">
+                </div>
+                <div class="team-content">
+                    <h3 class="name">Desmond Tunyiko</h3>
+                </div>
+                <ul class="social">
+                    <li><i class="fab fa-facebook"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-google-plus"></i></li>
+                    <li><i class="fab fa-linkedin"></i></li>
+                </ul>
+            </div>
+            <div class="our-team">
+                <div class="picture">
+                    <img class="img-fluid" src="./images/7.jpg">
+                </div>
+                <div class="team-content">
+                    <h3 class="name">Egide Harerimana</h3>
+                </div>
+                <ul class="social">
+                    <li><i class="fab fa-facebook"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-google-plus"></i></li>
+                    <li><i class="fab fa-linkedin"></i></li>
+                </ul>
+            </div>
+
+            <div class="our-team">
+                <div class="picture">
+                    <img class="img-fluid" src="./images/8.jpg">
+                </div>
+                <div class="team-content">
+                    <h3 class="name">Abu Mariam</h3>
+                </div>
+                <ul class="social">
+                    <li><i class="fab fa-facebook"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-google-plus"></i></li>
+                    <li><i class="fab fa-linkedin"></i></li>
+                </ul>
             </div>
         </div>
+
+
     </div>
     <div id="contact">
         <h1>contact</h1>
@@ -203,9 +268,9 @@
                 </td>
                 <td>
                     <form>
-                        <input type="text" placeholder="name" required>
-                        <input type="email" placeholder="email" required><br>
-                        <textarea placeholder="your message" required rows="5"></textarea><br>
+                        <input type="text" placeholder="Name" required>
+                        <input type="email" placeholder="Email" required><br>
+                        <textarea placeholder="Message" required rows="5"></textarea><br>
                         <button class="btn_one">send</button>
                     </form>
                 </td>
@@ -213,11 +278,10 @@
         </table>
     </div>
     <div id="footer">
-        Made on earth by <br> <a href="https://github.com/honorine22/Innovation-Gurus-Website">Innovation Gurus</a>
+        Copyright &copy; 2023 <a href="https://github.com/honorine22/Innovation-Gurus-Website">Innovation Gurus</a>
     </div>
     <script src="index.js" type="text/javascript"></script>
-    <script src="particles.js"></script>
-    <script src="app.js"></script>
+    <script src="app.js" type="text/javascript"></script>
 </body>
 
 </html>
