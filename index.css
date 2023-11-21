@@ -280,10 +280,9 @@ header table {
 }
 
 #rightImage {
-    height: 70vh;
-    margin-top: 5vh;
-    background: linear-gradient(150deg, var(--primary-shade-2), var(--primary-shade-3)), url("./images/home 1.jpg") center center;
-    /* background: url("./images//home.jpg") center center; */
+    height: 60vh;
+    margin-top: 8vh;
+    background: linear-gradient(150deg, var(--primary-shade-2), var(--primary-shade-3)), url("./images/c01.jpg") center right;
     background-size: cover;
     background-repeat: no-repeat;
     clip-path: polygon(0 0, 80% 0, 100% 20%, 100% 100%, 20% 100%, 0 80%);
