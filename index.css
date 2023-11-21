@@ -301,6 +301,15 @@ header table {
     width: 6%;
 }
 
+
+#row {
+    columns: 3;
+    width: 100%;
+    z-index: 1;
+    column-gap: 4%;
+    transition: 0.4s ease-in-out;
+}
+
 #photos {
     width: 100%;
     columns: 3;
@@ -455,6 +464,11 @@ button:focus {
         column-gap: 0%;
     }
 
+    #row {
+        columns: 1;
+        width: 100;
+    }
+
     #photos img {
         margin: 2% 0px;
     }
@@ -530,7 +544,7 @@ button:focus {
     }
 
     #bio h1 {
-        width: 25%;
+        width: 40%;
     }
 
     #contact h1 {
@@ -554,12 +568,6 @@ button:focus {
     #navigation a {
         color: #000;
     }
-}
-
-.row {
-    columns: 3;
-    column-gap: 4%;
-    transition: 0.4s ease-in-out;
 }
 
 .our-team {
